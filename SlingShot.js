@@ -18,11 +18,14 @@ class SlingShot{
     display(){
         // image(this.rope1,200,20);
         // image(this.rope2,170,20);
+        if(this.rope.bodyA){
             var pointA = this.rope.bodyA.position;
             var pointB = this.pointB;
             push();
             stroke(48,22,8);
+            line(pointA.x,pointA.y,pointB.x,pointB.y)
             pop();
-     }
+        }
+    }
 }
     
